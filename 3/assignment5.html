@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5 – Student Restaurants</title>
+    <link rel="stylesheet" href="assignment5.css" />
+  </head>
+  <body>
+
+    <!-- ════ Header ════════════════════════════════════════════════════════ -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-icon">🍽</span>
+          <span class="logo-text">Student<strong>Eats</strong></span>
+        </div>
+
+        <div class="header-controls">
+          <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input
+              id="search"
+              type="text"
+              placeholder="Search restaurants or city…"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="filter-wrap">
+            <label for="company-filter">Company</label>
+            <select id="company-filter">
+              <option value="">All</option>
+              <option value="Sodexo">Sodexo</option>
+              <option value="Compass Group">Compass Group</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ════ Main ══════════════════════════════════════════════════════════ -->
+    <main>
+      <!-- Status / loading / error banner -->
+      <div id="status" class="status hidden" role="alert"></div>
+
+      <!-- Restaurant grid -->
+      <section id="restaurant-grid" class="grid" aria-label="Restaurant list">
+        <!-- Cards injected by JS -->
+      </section>
+    </main>
+
+    <!-- ════ Modal ═════════════════════════════════════════════════════════ -->
+    <div id="modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal">
+        <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+
+        <div class="modal-header">
+          <div>
+            <span id="modal-company-badge" class="company-badge"></span>
+            <h2 id="modal-title"></h2>
+            <p  id="modal-address" class="modal-address"></p>
+          </div>
+        </div>
+
+        <div class="modal-meta">
+          <span id="modal-city"  class="meta-chip">📍 —</span>
+          <span id="modal-phone" class="meta-chip">📞 —</span>
+        </div>
+
+        <hr class="divider" />
+
+        <h3 class="menu-heading">Today's Menu</h3>
+        <div id="modal-menu" class="menu-body">
+          <!-- Courses injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <script src="assignment5.js"></script>
+  </body>
+</html>

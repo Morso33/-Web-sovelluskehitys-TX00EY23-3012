@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 – Error Handling</title>
+    <link rel="stylesheet" href="assignment3.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Assignment 3 <span class="badge">Error Handling</span></h1>
+      <p class="desc">
+        Attempts a GET request to a non-existent resource
+        (<code>/api/unknown/23</code>). The HTTP 404 is caught with a
+        <code>try/catch</code> block and an error message is logged to the
+        console.
+      </p>
+      <button id="btn-fetch">Try Request</button>
+      <div id="result" class="hidden"></div>
+    </div>
+    <script src="assignment3.js"></script>
+  </body>
+</html>

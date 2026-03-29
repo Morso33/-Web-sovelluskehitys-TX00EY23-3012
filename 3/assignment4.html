@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4 – Generic Fetch Function</title>
+    <link rel="stylesheet" href="assignment4.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Assignment 4 <span class="badge">fetchData()</span></h1>
+      <p class="desc">
+        Demonstrates a reusable <code>fetchData(url, options)</code> helper that
+        wraps the Fetch API, validates the response status, and throws on
+        non-2xx codes. Both a successful POST and a forced error scenario are
+        tested.
+      </p>
+
+      <div class="btn-row">
+        <button id="btn-success">Run – Success (POST)</button>
+        <button id="btn-error">Run – Error (404)</button>
+      </div>
+
+      <div id="output" class="hidden"></div>
+    </div>
+    <script src="assignment4.js"></script>
+  </body>
+</html>

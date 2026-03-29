@@ -1,0 +1,84 @@
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+}
+
+.highlight {
+  background-color: #ffe082;
+  font-weight: bold;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:hover td {
+  background-color: #f5f5f5;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 2rem;
+  min-width: 320px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.22);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+dialog h2 {
+  margin: 0 0 1.2rem 0;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #ffe082;
+  padding-bottom: 0.5rem;
+}
+
+.modal-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.modal-label {
+  font-weight: bold;
+  min-width: 100px;
+  color: #555;
+}
+
+.modal-close {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: block;
+  margin-left: auto;
+}

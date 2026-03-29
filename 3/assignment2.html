@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2 – POST Request</title>
+    <link rel="stylesheet" href="assignment2.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Assignment 2 <span class="badge">POST</span></h1>
+      <p class="desc">
+        Creates a new user on the Reqres API. Fill in a name and job, then click
+        <strong>Create User</strong>. The response is logged to the console and
+        shown below.
+      </p>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="e.g. Jane Doe" value="Jane Doe" />
+      </div>
+      <div class="form-group">
+        <label for="job">Job</label>
+        <input id="job" type="text" placeholder="e.g. Designer" value="Designer" />
+      </div>
+
+      <button id="btn-post">Create User</button>
+      <pre id="output" class="hidden"></pre>
+    </div>
+    <script src="assignment2.js"></script>
+  </body>
+</html>
